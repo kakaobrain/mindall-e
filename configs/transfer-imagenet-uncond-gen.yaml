@@ -1,0 +1,48 @@
+dataset:
+  dataset: imagenet
+  image_resolution: 256
+
+stage1:
+  type: vqgan
+  embed_dim: 256
+  n_embed: 16384
+  hparams:
+    double_z: False
+    z_channels: 256
+    resolution: 256
+    in_channels: 3
+    out_ch: 3
+    ch: 128
+    ch_mult: [1, 1, 2, 2, 4]
+    num_res_blocks: 2
+    attn_resolutions: [16]
+    pdrop: 0.0
+
+stage2:
+  type: igpt
+  use_cls_cond: False
+  vocab_size_img: 16384
+  hparams:
+    embed_dim: 1536
+    n_layers: 42
+    n_heads: 24
+    n_dense_layers: 42
+    ctx_len_img: 256
+    embd_pdrop: 0.0
+    resid_pdrop: 0.0
+    attn_pdrop: 0.0
+    mlp_bias: True
+    attn_bias: True
+    gelu_use_approx: False
+
+optimizer:
+  opt_type: adamW
+  base_lr: 1e-4
+  weight_decay: 0.0
+  betas: [0.9, 0.95]
+  grad_clip_norm: 4.0
+
+experiment:
+  local_batch_size: 2
+  total_batch_size: 512
+  epochs: 8

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you find this repository useful in your research, please cite"
+authors:
+  - family-names: Kim
+    given-names: Saehoon
+  - family-names: Cho
+    given-names: Sanghun
+  - family-names: Kim
+    given-names: Chiheon
+  - family-names: Lee
+    given-names: Doyup
+  - family-names: Baek
+    given-names: Woonhyuk
+title: "minDALL-E on Conceptual Captions"
+version: 0.1
+date-released: 2021-12-14
+repository-code: https://github.com/kakaobrain/minDALL-E

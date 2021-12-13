@@ -1,0 +1,10 @@
+torch==1.8.0
+torchvision>=0.8.2
+tokenizers>=0.10.2
+pyflakes>=2.2.0
+tqdm>=4.46.0
+pytorch-lightning>=1.5
+einops
+omegaconf
+git+https://github.com/openai/CLIP.git
+matplotlib

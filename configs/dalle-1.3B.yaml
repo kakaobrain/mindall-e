@@ -1,0 +1,33 @@
+stage1:
+  type: vqgan
+  embed_dim: 256
+  n_embed: 16384
+  hparams:
+    double_z: False
+    z_channels: 256
+    resolution: 256
+    in_channels: 3
+    out_ch: 3
+    ch: 128
+    ch_mult: [1, 1, 2, 2, 4]
+    num_res_blocks: 2
+    attn_resolutions: [16]
+    pdrop: 0.0
+
+stage2:
+  type: transformer1d
+  vocab_size_txt: 16384
+  vocab_size_img: 16384
+  hparams:
+    embed_dim: 1536
+    n_layers: 42
+    n_heads: 24
+    n_dense_layers: 42
+    ctx_len_img: 256
+    ctx_len_txt: 64
+    embd_pdrop: 0.0
+    resid_pdrop: 0.0
+    attn_pdrop: 0.0
+    mlp_bias: True
+    attn_bias: True
+    gelu_use_approx: False
