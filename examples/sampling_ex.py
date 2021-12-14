@@ -58,6 +58,6 @@ images = images[rank]
 print(rank, images.shape)
 if not os.path.exists('./figures'):
     os.makedirs('./figures')
-for i in range(16):
+for i in range(min(16, args.num_candidates)):
     im = Image.fromarray((images[i]*255).astype(np.uint8))
     im.save(f'./figures/{args.prompt}_{i}.png')
