@@ -1,6 +1,6 @@
 # minDALL-E on Conceptual Captions
 
-`minDALL-E`, naming after [minGPT](https://github.com/karpathy/minGPT), is a 1.3B text-to-image generation model trained on 14 million
+`minDALL-E`, named after [minGPT](https://github.com/karpathy/minGPT), is a 1.3B text-to-image generation model trained on 14 million
 image-text pairs for non-commercial purposes.
 
 ![a painting of a bird in the style of asian painting](assets/bird_asian_painting_style.gif)
