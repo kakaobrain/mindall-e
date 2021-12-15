@@ -69,7 +69,7 @@ plt.show()
   Before using this, you may need to install [ipywidgets](https://ipywidgets.readthedocs.io/en/latest/user_install.html).
 
 ## Samples (Top-K=256, Temperature=1.0)
-- "a painting of a {dog, cat} with sunglasses in the frame"
+- "a painting of a {cat, dog} with sunglasses in the frame"
 <p float="left">
   <img src="/assets/a painting of a cat with sunglasses in the frame_0.png" width="128" />
   <img src="/assets/a painting of a cat with sunglasses in the frame_1.png" width="128" />
