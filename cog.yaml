@@ -1,0 +1,21 @@
+build:
+  gpu: true
+  python_version: "3.8"
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_packages:
+    - "torch==1.10.0"
+    - "torchvision==0.11.1"
+    - "tokenizers==0.10.2"
+    - "pyflakes==2.2.0"
+    - "tqdm==4.46.0"
+    - "pytorch-lightning==1.5"
+    - "einops==0.3.2"
+    - "omegaconf==2.1.1"
+    - "matplotlib==3.5.1"
+    - "ipython==7.30.1"
+  run:
+    - pip install git+https://github.com/openai/CLIP.git
+
+predict: "predict.py:Predictor"
