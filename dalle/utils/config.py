@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------------
 # Minimal DALL-E
-# Copyright (c) 2021 KakaoBrain. All Rights Reserved.
+# Copyright (c) 2021 Kakao Brain Corp. All Rights Reserved.
 # Licensed under the Apache License, Version 2.0 [see LICENSE for details]
 # ------------------------------------------------------------------------------------
 
