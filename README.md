@@ -6,6 +6,7 @@ image-text pairs for non-commercial purposes.
 ![a painting of a bird in the style of asian painting](assets/bird_asian_painting_style.gif)
 ![a photo of san francisco's golden gate bridge in black and white tone](assets/golden_gate_black_and_white_tone.gif)
 
+[![Replicate](https://replicate.com/saehoonkim/mindall-e/badge)](https://replicate.ai/saehoonkim/mindall-e)
 
 ## Environment Setup
 - Basic setup
